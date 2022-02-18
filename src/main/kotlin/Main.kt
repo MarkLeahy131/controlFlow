@@ -16,6 +16,7 @@ fun main(args: Array<String>) {
     rangeOf(4)
     inferredTypeOf(0.0F)
     stringContains("wordle")
+    stringContains("Mark") //Test
 }
 
 fun minimumOf(number1: Long, number2: Long){
