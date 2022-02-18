@@ -58,6 +58,15 @@ fun inferredTypeOf(variable: Any){
     // When the type is Int, print out that the data type of the variable is Int.
     //    Adopt the same approach for the following types: Long, Double, Float or Boolean.
     // When the data type is not Int, Long, Double, Float or Boolean, print that the data type is something else.
+    when (variable){
+        is Int ->println ("This is an Int")
+        is Long ->println ("This is a Long")
+        is Double ->println ("This is a Double")
+        is Float ->println ("This is a Float")
+        is Boolean ->println ("This is a Boolean")
+
+        else-> println ("Unknown")
+    }
 }
 
 fun stringContains(str : String){
