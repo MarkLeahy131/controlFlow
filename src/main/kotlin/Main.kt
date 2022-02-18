@@ -76,4 +76,12 @@ fun stringContains(str : String){
     //    - contains the letter C, print the string and say it contains C.
     //    - is empty, inform the user that it is empty.
     //    - otherwise print the string and say it doesn't contain A, B or C.
+    when {
+        str.uppercase().contains('A') ->println("${str} Contains A")
+        str.uppercase().contains ('B')->println("${str} Contains B")
+        str.uppercase().contains ('C')->println("${str} Contains C")
+        str.isEmpty()->println("Is empty")
+
+        else-> println ("${str} Doesn't contain A,B or C")
+    }
 }
